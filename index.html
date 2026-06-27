@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zain Altaf — Premium 3D Packaging Design for Amazon &amp; E-commerce Brands</title>
+<meta name="description" content="Custom luxury packaging and photorealistic 3D renders engineered to convert Amazon FBA and e-commerce shoppers into loyal buyers.">
+<link rel="icon" href="logo.jpg" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script>
+  /* avoid theme flash: apply saved theme before first paint */
+  (function(){
+    try{
+      var t = localStorage.getItem('za-theme');
+      if(t === 'light' || t === 'dark'){ document.documentElement.setAttribute('data-theme', t); }
+    }catch(e){}
+  })();
+</script>
+</head>
+<body>
+
+<!-- =================== LANGUAGE GATE =================== -->
+<div class="lang-gate" id="langGate" role="dialog" aria-modal="true" aria-labelledby="langGateTitle">
+  <div class="blueprint-bg lang-gate-bg" aria-hidden="true"></div>
+  <div class="lang-gate-card">
+    <img src="assets/logo.png" alt="Zain Altaf logo" class="lang-gate-logo">
+    <h2 id="langGateTitle" data-i18n="gate.title">Choose Your Language</h2>
+    <p data-i18n="gate.sub">Select your preferred language to continue</p>
+    <div class="lang-options">
+      <button class="lang-option" data-lang="en">
+        <span class="name">English</span>
+        <span class="flag">EN</span>
+      </button>
+      <button class="lang-option" data-lang="id">
+        <span class="name">Arabic</span>
+        <span class="flag">AR</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- =================== NAV =================== -->
+<nav class="nav">
+  <div class="container nav-row">
+    <div class="nav-left">
+      <span class="nav-word">ZAIN<span>ALTAF</span></span>
+      <ul class="nav-links">
+        <li><a href="#work" data-i18n="nav.work">Work</a></li>
+        <li><a href="#process" data-i18n="nav.process">Process</a></li>
+        <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <button class="lang-pill" id="langToggle" type="button" aria-label="Change language">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="14" height="14"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 0 1 0 18a13 13 0 0 1 0-18Z"/></svg>
+        <span class="lang-text" id="langCurrent">EN</span>
+      </button>
+
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark or light mode">
+        <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12.4A9 9 0 1 1 11.6 3a7.2 7.2 0 0 0 9.4 9.4Z"/></svg>
+        <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" style="display:none"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M4.6 4.6l1.85 1.85M17.55 17.55l1.85 1.85M2.5 12h2.6M18.9 12h2.6M4.6 19.4l1.85-1.85M17.55 6.45l1.85-1.85"/></svg>
+      </button>
+
+      
+
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work" data-i18n="nav.work">Work</a>
+  <a href="#process" data-i18n="nav.process">Process</a>
+  <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <a href="https://wa.me/92306411269" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="hero.cta1">Elevate My Brand</a>
+</div>
+
+<!-- =================== HERO =================== -->
+<header class="hero">
+  <div class="blueprint-bg" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal is-visible">
+      <span class="eyebrow" data-i18n="hero.eyebrow">Strategic Packaging &amp; 3D Design</span>
+      <h1 data-i18n="hero.title">Turn Casual Scrollers Into <em>Brand Loyalists.</em></h1>
+      <p class="lede" data-i18n="hero.sub">High-converting structural and label design, engineered for ambitious Amazon brands and elite e-commerce stores. We don't just design boxes — we build unboxing experiences that scale your revenue.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/92306411269?text=Hi%20Zain%2C%20I%27d%20like%20a%20custom%20quote%20for%20packaging%20design." class="btn btn-primary" target="_blank" rel="noopener" data-i18n="hero.cta1">
+          Elevate My Brand
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#work" class="btn btn-ghost" data-i18n="hero.cta2">See the Work</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat reveal" style="--i:0">
+          <div class="num"><span class="counter" data-target="1000">0</span>+</div>
+          <div class="label" data-i18n="hero.stat1">Projects Completed</div>
+        </div>
+        <div class="stat reveal" style="--i:1">
+          <div class="num"><span class="counter" data-target="100">0</span>%</div>
+          <div class="label" data-i18n="hero.stat2">Five-Star Feedback</div>
+        </div>
+        <div class="stat reveal" style="--i:2">
+          <div class="num"><span class="counter" data-target="50">0</span>+</div>
+          <div class="label" data-i18n="hero.stat3">Brands Scaled</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="hero-card crop">
+        <span class="crop-tr"></span><span class="crop-bl"></span>
+        <div style="background-image: url(hero.png); background-size: cover; background-position: center;" class="render-placeholder">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</header>
+
+<!-- =================== MARQUEE =================== -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <span><b data-i18n="marquee.line">Trusted by Top-Tier Amazon FBA Sellers Worldwide</b></span>
+    <span>Amazon FBA</span>
+    <span><b data-i18n="marquee.line">Trusted by Top-Tier Amazon FBA Sellers Worldwide</b></span>
+    <span>Amazon FBA</span>
+    <span><b data-i18n="marquee.line">Trusted by Top-Tier Amazon FBA Sellers Worldwide</b></span>
+    <span>Amazon FBA</span>
+  </div>
+</div>
+
+<!-- =================== PROBLEM / SOLUTION =================== -->
+<section id="why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" data-i18n="ps.eyebrow">Why Packaging Decides the Sale</span>
+    </div>
+    <div class="ps-grid">
+      <div class="ps-col ps-problem reveal">
+        <span class="tag" data-i18n="ps.problem.tag">The Friction</span>
+        <h3 data-i18n="ps.problem.title">Cheap-looking packaging costs you the click.</h3>
+        <p data-i18n="ps.problem.body">On Amazon, your product is only as good as your main image. If your packaging looks cheap, buyers click away — costing you thousands in lost conversions and wasted ad spend.</p>
+      </div>
+      <div class="ps-fold" aria-hidden="true"></div>
+      <div class="ps-col ps-solution reveal">
+        <span class="tag" data-i18n="ps.solution.tag">The Zain Altaf Standard</span>
+        <h3 data-i18n="ps.solution.title">Design that lets you charge what you're worth.</h3>
+        <p data-i18n="ps.solution.body">Custom, luxury-grade packaging and ultra-realistic 3D renders that command attention, build instant trust, and let you justify premium pricing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PORTFOLIO =================== -->
+<section id="work">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="work.eyebrow">Selected Work</span>
+      <h2 data-i18n="work.title">Engineered for diverse markets</h2>
+      <p data-i18n="work.sub">Explore premium packaging concepts built to dominate competitive niches.</p>
+    </div>
+
+    <div class="filter-row" id="filterRow">
+      <button class="filter-pill active" data-filter="all" data-i18n="work.filter.all">All</button>
+      <button class="filter-pill" data-filter="health" data-i18n="work.filter.health">Health &amp; Wellness</button>
+      <button class="filter-pill" data-filter="beauty" data-i18n="work.filter.beauty">Beauty &amp; Cosmetics</button>
+      <button class="filter-pill" data-filter="tech" data-i18n="work.filter.tech">Electronics &amp; Gadgets</button>
+      <button class="filter-pill" data-filter="baby" data-i18n="work.filter.baby">Home &amp; Baby</button>
+    </div>
+
+    <div class="bento" id="bentoGrid">
+
+      <div class="bento-item size-lg" data-cat="health">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product1.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+            
+          </div>
+          <div class="bento-meta">
+            <span class="name">NutraBloom Gummies</span>
+            <span class="cat" data-i18n="work.filter.health">Health &amp; Wellness</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-item" data-cat="beauty">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product2.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+          </div>
+          <div class="bento-meta">
+            <span class="name">Lumière Skincare</span>
+            <span class="cat" data-i18n="work.filter.beauty">Beauty &amp; Cosmetics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-item" data-cat="tech">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product3.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+            
+          </div>
+          <div class="bento-meta">
+            <span class="name">Voltix Transmitter</span>
+            <span class="cat" data-i18n="work.filter.tech">Electronics &amp; Gadgets</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-item" data-cat="health">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product4.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+            
+          </div>
+          <div class="bento-meta">
+            <span class="name">Velorix Nootropic</span>
+            <span class="cat" data-i18n="work.filter.health">Health &amp; Wellness</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-item" data-cat="baby">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product5.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+            
+          </div>
+          <div class="bento-meta">
+            <span class="name">Cute &amp; Co Nappies</span>
+            <span class="cat" data-i18n="work.filter.baby">Home &amp; Baby</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-item" data-cat="beauty">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product6.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+            
+          </div>
+          <div class="bento-meta">
+            <span class="name">Avélle LED Mask</span>
+            <span class="cat" data-i18n="work.filter.beauty">Beauty &amp; Cosmetics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-item" data-cat="tech">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product7.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+          </div>
+          <div class="bento-meta">
+            <span class="name">Finger Trainer</span>
+            <span class="cat" data-i18n="work.filter.tech">Electronics &amp; Gadgets</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bento-item" data-cat="baby">
+        <div class="bento-card crop">
+          <span class="crop-tr"></span><span class="crop-bl"></span>
+          <div style="background-image: url(product8.PNG); background-size: cover; background-position: center;" class="render-placeholder">
+            
+          </div>
+          <div class="bento-meta">
+            <span class="name">Unello Baby Kit</span>
+            <span class="cat" data-i18n="work.filter.baby">Home &amp; Baby</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== PROCESS =================== -->
+<section id="process">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" data-i18n="process.eyebrow">How We Work</span>
+      <h2 data-i18n="process.title">From concept to ready-to-print files</h2>
+    </div>
+
+    <div class="process-row">
+      <div class="process-card reveal" style="--i:0">
+        <div class="process-num"><span class="spec-tag">STEP</span><b>01</b></div>
+        <h3 data-i18n="process.s1.title">Strategic discovery</h3>
+        <p data-i18n="process.s1.body">We analyze your audience, competitors, and Amazon guidelines to map a design strategy built to convert.</p>
+      </div>
+      <div class="process-card reveal" style="--i:1">
+        <div class="process-num"><span class="spec-tag">STEP</span><b>02</b></div>
+        <h3 data-i18n="process.s2.title">3D concept &amp; iteration</h3>
+        <p data-i18n="process.s2.body">You see photorealistic 3D renders of your packaging before a single unit goes to production.</p>
+      </div>
+      <div class="process-card reveal" style="--i:2">
+        <div class="process-num"><span class="spec-tag">STEP</span><b>03</b></div>
+        <h3 data-i18n="process.s3.title">Print-ready handoff</h3>
+        <p data-i18n="process.s3.body">Pixel-perfect source files and dielines, fully optimized for your manufacturing partners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TESTIMONIALS =================== -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow" data-i18n="testi.eyebrow">Results</span>
+      <h2 data-i18n="testi.title">What serious sellers say</h2>
+    </div>
+
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <p class="testi-quote" data-i18n="testi.q1">"Exceptional work. This is my second project with Zain and I'm already lining up the third."</p>
+        <div class="testi-foot">
+          <span class="testi-name" data-i18n="testi.a1">Verified E-commerce Client</span>
+          <span class="testi-stamp" data-i18n="testi.stamp">Verified</span>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="testi-quote" data-i18n="testi.q2">"Zain completely transformed how our product is perceived. Our Amazon click-through rate doubled within two weeks of launch."</p>
+        <div class="testi-foot">
+          <span class="testi-name" data-i18n="testi.a2">7-Figure Amazon FBA Seller</span>
+          <span class="testi-stamp" data-i18n="testi.stamp">Verified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FINAL CTA =================== -->
+<section id="contact">
+  <div class="container">
+    <div class="final-cta reveal">
+      <div class="glow" aria-hidden="true"></div>
+      <h2 data-i18n="cta.title">Ready to make your brand look premium?</h2>
+      <p data-i18n="cta.sub">Stop losing sales to prettier competitors. Let's build an unforgettable visual identity for your product line.</p>
+      <a href="https://wa.me/92306411269?text=Hi%20Zain%2C%20I%27d%20like%20to%20book%20a%20packaging%20consultation." class="btn btn-primary" target="_blank" rel="noopener" data-i18n="cta.button">
+        Book Your Packaging Consultation
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-word">ZAIN<span>ALTAF</span></span>
+        <p data-i18n="footer.tagline">Premium 3D packaging design for brands that refuse to look ordinary.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4 data-i18n="footer.nav">Navigate</h4>
+          <ul>
+            <li><a href="#work" data-i18n="nav.work">Work</a></li>
+            <li><a href="#process" data-i18n="nav.process">Process</a></li>
+            <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.connect">Let's talk</h4>
+          <div class="footer-social">
+            <a class="icon-btn" href="https://www.instagram.com/zain_altaf_packaging_designer/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+            </a>
+            <a class="icon-btn" href="https://wa.me/92306411269" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 18l-3.5 1 1-3.4A8 8 0 1 1 7 18Z"/><path d="M9 10c0 3 2.6 5.5 5.5 5.5.5 0 1-.4 1-1v-1.1c0-.4-.3-.7-.6-.8l-1.7-.5c-.3-.1-.6 0-.8.2l-.4.5c-1-.5-1.9-1.4-2.4-2.4l.5-.4c.2-.2.3-.5.2-.8L10.8 8c-.1-.3-.4-.6-.8-.6H9c-.6 0-1 .5-1 1 0 .6 0 1.1.1 1.6Z"/></svg>
+            </a>
+            <a class="icon-btn" href="mailto:zainch3234@gmail.com?subject=Packaging%20Design%20Inquiry" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 6.5l8 6 8-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> <span data-i18n="footer.legal">Zain Altaf Packaging Design. All rights reserved.</span></span>
+      <span class="spec-tag">FIG. 00 / SPEC SHEET / END</span>
+    </div>
+  </div>
+</footer>
+
+<!-- =================== FLOATING WHATSAPP =================== -->
+<a class="float-wa" href="https://wa.me/92306411269?text=Hi%20Zain%2C%20I%20have%20a%20question%20about%20packaging%20design." target="_blank" rel="noopener" aria-label="Message on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 18l-3.5 1 1-3.4A8 8 0 1 1 7 18Z"/><path d="M9 10c0 3 2.6 5.5 5.5 5.5.5 0 1-.4 1-1v-1.1c0-.4-.3-.7-.6-.8l-1.7-.5c-.3-.1-.6 0-.8.2l-.4.5c-1-.5-1.9-1.4-2.4-2.4l.5-.4c.2-.2.3-.5.2-.8L10.8 8c-.1-.3-.4-.6-.8-.6H9c-.6 0-1 .5-1 1 0 .6 0 1.1.1 1.6Z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
